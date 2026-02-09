@@ -1,0 +1,13 @@
+<h1>Modifier le potin n°<%= @id %></h1>
+
+<form action="/gossips/<%= @id %>/edit" method="POST">
+  <label>Auteur :</label>
+  <input type="text" name="gossip_author" value="<%= @gossip.author %>">
+
+  <label>Contenu :</label>
+  <input type="text" name="gossip_content" value="<%= @gossip.content %>">
+
+  <input type="submit" value="Mettre à jour">
+</form>
+
+<a href="/">Retour</a>

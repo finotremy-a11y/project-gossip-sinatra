@@ -1,0 +1,12 @@
+<h1>Liste des potins</h1>
+
+<% @gossips.each_with_index do |gossip, index| %>
+  <div class="gossip-card">
+    <strong><%= gossip.author %></strong> : <%= gossip.content %>
+    <br>
+    <a href="/gossips/<%= index %>">Voir le potin</a>
+  </div>
+<% end %>
+
+<a href="/gossips/new/">Créer un potin</a>
+

@@ -1,0 +1,12 @@
+<h1>Potin n°<%= @id %></h1>
+
+<p><strong>Auteur :</strong> <%= @gossip.author %></p>
+<p><strong>Contenu :</strong> <%= @gossip.content %></p>
+
+<a href="/">Retour à l’accueil</a>
+
+<a href="/gossips/<%= @id %>/edit">Modifier ce potin</a>
+
+<form action="/gossips/<%= @id %>/delete" method="POST" style="margin-top: 20px;">
+  <input type="submit" value="Supprimer ce potin" class="delete-btn">
+</form>
